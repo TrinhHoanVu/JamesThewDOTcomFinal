@@ -80,7 +80,7 @@ const RecipeEdit = () => {
                 {/* Optional: Input for a new image URL */}
                 <div className="form-group">
                     <label htmlFor="strMealThumb">Change Image URL:</label>
-                    <input
+                    <input 
                         type="text"
                         id="strMealThumb"
                         name="strMealThumb"
@@ -91,7 +91,7 @@ const RecipeEdit = () => {
 
                 <div className="form-group">
                     <label htmlFor="strMeal">Dish Name:</label>
-                    <input
+                    <input 
                         type="text"
                         id="strMeal"
                         name="strMeal"
@@ -102,7 +102,7 @@ const RecipeEdit = () => {
                 </div>
                 <div className="form-group">
                     <label htmlFor="strCategory">Category:</label>
-                    <input
+                    <input 
                         type="text"
                         id="strCategory"
                         name="strCategory"
@@ -113,7 +113,7 @@ const RecipeEdit = () => {
                 </div>
                 <div className="form-group">
                     <label htmlFor="strArea">Area:</label>
-                    <input
+                    <input 
                         type="text"
                         id="strArea"
                         name="strArea"
@@ -152,7 +152,7 @@ const RecipeEdit = () => {
                 </div>
                 {/* Add more ingredients as needed... */}
 
-                <button type="submit" className="submit-btn">Save Changes</button>
+                <button type="submit" className="submit-btn-reciperecipe">Save Changes</button>
             </form>
         </div>
     );

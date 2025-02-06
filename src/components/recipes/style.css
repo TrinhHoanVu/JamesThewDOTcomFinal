@@ -31,6 +31,7 @@ body{
 }
 .search-bar{
     margin: 1rem 0;
+    font-size: 0.8rem;
     width:400px;
     height:40px;
     border:none;
@@ -230,7 +231,7 @@ body{
 .form-group input,
 .form-group textarea {
     padding: 0.8rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
@@ -246,7 +247,7 @@ textarea {
     height: 150px;
 }
 
-button.submit-btn {
+button.submit-btn-recipe {
     padding: 1rem;
     background-color: #E16120;
     color: white;
@@ -257,7 +258,7 @@ button.submit-btn {
     transition: background 0.3s ease;
 }
 
-button.submit-btn:hover {
+button.submit-btn-recipe:hover {
     background-color: #C5541A;
 }
 
