@@ -2,10 +2,10 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   background-size: cover;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; */
 }
 
 

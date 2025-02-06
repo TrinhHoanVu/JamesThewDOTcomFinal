@@ -1,5 +1,5 @@
 import Login from "../components/account/login"
-import Home from "../components/home"
+
 import ForgotPassword from "../components/account/forgotpassword"
 import SignUp from "../components/account/signup"
 import ResetPassword from "../components/account/resetpassword"
@@ -14,6 +14,9 @@ import TipsPage from "../components/tips/tips-page"
 import TipDetail from "../components/tips/tip-detail"
 import RecipesPage from "../components/recipes/recipes-page"
 import Approval from "../components/recipes/approval"
+import Home from "../components/Home/home"
+import Meal from "../components/recipes/Meal"
+import Recipe from "../components/recipes/Recipe"
 
 const publicRouter = [
     {
@@ -61,12 +64,12 @@ const publicRouter = [
         element: <TipDetail />
     },
     {
-        path: "/recipes",
-        element: <RecipesPage />
+        path:"/recipe" ,
+        element: <Meal />
     },
     {
-        path: "/recipes/:id",
-        element: <TipDetail />
+        path:"/recipe/:recipeId",
+         element:<Recipe/>
     }
 ]
 

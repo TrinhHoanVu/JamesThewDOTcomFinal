@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useContext, useState, useEffect } from "react";
 import { DataContext } from "../../context/DatabaseContext";
 import { Country, State, City } from 'country-state-city';
-import "../../css/management/account-profile.css"
+import "../../css/management/account-profile.css";
 import PaymentForm from "../account/payment-form";
 import { error } from "jquery";
 import Swal from 'sweetalert2';
