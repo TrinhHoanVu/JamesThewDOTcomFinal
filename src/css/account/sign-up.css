@@ -1,0 +1,108 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(255, 126, 95, 0.5), #ffffff);
+    width: 1519px;
+    height: 700px;
+}
+
+.signup-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 650px;
+    min-width: 650px;
+    height: 600px;
+}
+
+.signup-header {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #e67e22;
+}
+
+.signup-form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    height: 90px;
+}
+
+.signup-error {
+    margin-top: 5px;
+}
+
+.signup-label {
+    display: block;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.signup-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.signup-submit-button {
+    background-color: #ff7700;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: -30px;
+}
+
+.signup-submit-button:hover {
+    background-color: #d35400;
+}
+
+.signup-message {
+    margin-top: 10px;
+    color: #e74c3c;
+}
+
+.signup-payment-options {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.signup-payment-options-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-payment-options input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    outline: none;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.signup-payment-options input[type="radio"]:checked {
+    background-color: #007bff;
+    border-color: #0056b3;
+}
+
+.signup-payment-options input[type="radio"]:focus {
+    box-shadow: 0 0 3px #007bff;
+}
+

@@ -1,0 +1,183 @@
+.contest-management-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contest-management-title {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.contest-management-container {
+    max-width: 1200px;
+    min-width: 1200px;
+    margin: -50px auto;
+    padding: 20px;
+}
+
+.contest-management-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.contest-management-table th,
+.contest-management-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.contest-management-table th {
+    background-color: #e67e22;
+    color: white;
+}
+
+.contest-management-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.contest-management-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.contest-management-table .winner {
+    color: #0e75d5;
+    font-weight: bold;
+}
+
+.contest-management-table .price {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.contest-management-table .status {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contest-management-table .status.active {
+    color: #0e75d5;
+}
+
+.contest-management-table .status.inactive {
+    color: #dc3545;
+}
+
+.contest-management-button {
+    padding: 8px 16px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.contest-management-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.contest-management-button:hover:not(:disabled) {
+    background-color: #965013;
+}
+
+.contest-management-pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contest-management-pagination-controls span {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.contest-management-error-message {
+    color: red;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contest-management-edit-button {
+    padding: 6px 12px;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.contest-management-edit-button:hover {
+    background-color: #e0a800;
+}
+
+.contest-management-edit-button:focus {
+    outline: none;
+    box-shadow: 0 0 3px #ffc107;
+}
+
+.contest-management-icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #007bff;
+    margin: 0 5px;
+}
+
+.contest-management-icon-button:hover {
+    color: #0056b3;
+}
+
+.contest-management-icon-button.delete {
+    color: #dc3545;
+}
+
+.contest-management-icon-button.delete:hover {
+    color: #a71d2a;
+}
+
+.edit-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.edit-modal {
+    background: white;
+    width: 50%;
+    max-width: 1200px;
+    min-width: 1200px;
+    max-height: 600px;
+    min-height: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1001;
+    margin: 0;
+}
+
+.close-modal-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ffc107;
+}

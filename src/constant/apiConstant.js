@@ -1,0 +1,1 @@
+export const accountAPI = "http://localhost:5231/api/Account"

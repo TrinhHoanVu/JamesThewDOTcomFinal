@@ -1,0 +1,172 @@
+.attendees-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attendees-modal {
+    background: linear-gradient(to top, rgba(255, 126, 95, 0.5), #ffffff);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+    width: 98%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+.attendees-table {
+    width: 100%;
+    min-width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-top: 20px;
+}
+
+.attendees-table th,
+.attendees-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.attendees-table th {
+    background-color: black;
+}
+
+
+.select-column {
+    width: 5%;
+}
+
+.name-column {
+    width: 10%;
+}
+
+.comment-column {
+    width: 75%;
+}
+
+.likes-column {
+    width: 5%;
+    text-align: left;
+}
+
+.status-column {
+    width: 5%;
+}
+
+
+.close-modal-button {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-modal-button:hover {
+    background-color: #e67e22;
+    color: white;
+}
+
+.dataTables_wrapper div.row:first-of-type {
+    background-color: gray;
+}
+
+.attendee-checkbox {
+    width: 20px;
+}
+
+.compare-name-column {
+    width: 10%;
+}
+
+.comment-name-column {
+    width: 65%;
+}
+
+.likes-name-column {
+    width: 5%;
+}
+
+.evaluate-name-column {
+    width: 5%;
+}
+
+.evaluate-column {
+    width: 1%;
+}
+
+.evaluate-input {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    transition: border-bottom 0.3s ease-in-out;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.selected-comments-container {
+    margin-top: 20px;
+}
+
+.selected-comments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.selected-comments-table th,
+.selected-comments-table td {
+    padding: 10px;
+    border: 1px solid #000000;
+    text-align: left;
+}
+
+.selected-comments-table th {
+    background-color: none;
+}
+
+.selected-comments-container h2 {
+    margin-bottom: 15px;
+}
+
+.compare-button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+.compare-button:hover {
+    background-color: #f89946;
+}
+
+.compare-button-2 {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+}
+
+.compare-button-2:hover {
+    background-color: #f89946;
+}
