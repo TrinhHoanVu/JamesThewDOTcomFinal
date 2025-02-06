@@ -45,11 +45,11 @@ const Navbar = () => {
                 <span className="navbar-brand-text fw-7">James Thew</span>
               </Link>
               <div >
-              <Link to="/recipe" className="login-btn"  onClick={scrollToTop}>Recipe</Link>
-              <Link to="/compecompe" className="login-btn"  onClick={scrollToTop}>Competition</Link>
-              <Link className="login-btn" onClick={scrollToContact} > Contact </Link>
-              <Link to="/login" className="login-btn"  onClick={scrollToTop}>Login</Link>
-              <button onClick={toggleModal} className="login-btn">
+              <Link to="/recipe" className="login-btn-nav"  onClick={scrollToTop}>Recipe</Link>
+              <Link to="/compecompe" className="login-btn-nav"  onClick={scrollToTop}>Competition</Link>
+              <Link className="login-btn-nav" onClick={scrollToContact} > Contact </Link>
+              <Link to="/login" className="login-btn-nav"  onClick={scrollToTop}>Login</Link>
+              <button onClick={toggleModal} className="login-btn-nav">
                 <FaBell size={20} />
               </button>
             </div>
