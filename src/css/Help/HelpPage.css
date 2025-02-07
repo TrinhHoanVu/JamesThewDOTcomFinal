@@ -1,0 +1,173 @@
+/* Đặt font chữ mặc định và reset một số phần tử */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* =================== HELP PAGE CONTAINER =================== */
+.help-page {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* =================== HEADER =================== */
+.help-header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #0099ff;
+}
+
+.help-header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+/* =================== BUTTON BACK =================== */
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* =================== SEARCH BAR =================== */
+.search-bar {
+  width: 100%;
+  max-width: 450px;
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+  background: #e3f2fd;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-bar input::placeholder {
+  color: #0077cc;
+}
+
+/* =================== HELP TOPICS =================== */
+.help-topics {
+  margin-top: 20px;
+}
+
+.topic-item {
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.topic-item:hover {
+  background: #b3e0ff;
+}
+
+.topic-item h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #0056b3;
+}
+
+/* =================== FAQ SECTION =================== */
+.faq-item {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #0099ff;
+}
+
+.faq-item h3 {
+  font-size: 16px;
+  margin: 0;
+  cursor: pointer;
+  padding: 10px;
+  color: #0077cc;
+}
+
+.faq-item h3:hover {
+  color: #0099ff;
+}
+
+.faq-item p {
+  font-size: 14px;
+  color: #333;
+  padding: 10px;
+}
+
+/* =================== FEEDBACK FORM =================== */
+.feedback-form {
+  margin-top: 15px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #0099ff;
+}
+
+.feedback-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #0099ff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.feedback-form button {
+  background: #0099ff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.feedback-form button:hover {
+  background: #0077cc;
+}

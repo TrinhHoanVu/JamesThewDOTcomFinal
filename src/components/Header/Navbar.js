@@ -48,7 +48,8 @@ const Navbar = () => {
               <Link to="/recipe" className="login-btn"  onClick={scrollToTop}>Recipe</Link>
               <Link to="/compecompe" className="login-btn"  onClick={scrollToTop}>Competition</Link>
               <Link className="login-btn" onClick={scrollToContact} > Contact </Link>
-              <Link to="/login" className="login-btn"  onClick={scrollToTop}>Login</Link>
+              <Link to="/helppage" className="login-btn"  onClick={scrollToTop}>HelpPage</Link>
+              <Link to="/login" className="login-btn"  onClick={scrollToTop}>Login</Link>             
               <button onClick={toggleModal} className="login-btn">
                 <FaBell size={20} />
               </button>

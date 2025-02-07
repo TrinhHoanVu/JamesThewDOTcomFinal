@@ -10,6 +10,8 @@ import Home from "./components/Home/home";
 import AuthProvider from "./context/AuthContext";
 import Navbar from "./components/Header/Navbar";
 import ContactInfo from "./components/Contact/ContactInfo";
+import HelpPage from "./components/Help/HelpPage";
+
 
 function App() {
   const { tokenInfor } = useContext(DataContext);
@@ -18,7 +20,6 @@ function App() {
   const showNavbarAndContact = location.pathname === "/" || location.pathname.startsWith("/recipe");
 
   return (
-    
     <div className="container">
       <AuthProvider>
         {showNavbarAndContact && <Navbar />}
@@ -26,6 +27,7 @@ function App() {
           {publicRouter.map((item, index) => {
             return <Route key={index} path={item.path} element={item.element} />;
           })}
+          <Route path="/helppage" element={<HelpPage />} />  {/* ✅ Thêm route HelpPage */}
           {privateRouter.map((item, index) => (
             <Route
               key={index}
@@ -39,7 +41,7 @@ function App() {
               }
             />
           ))}
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<Home />} />
           {evaluateRouter.map((item, index) => (
             <Route
               key={index}
@@ -48,7 +50,7 @@ function App() {
                 item.roles.includes(tokenInfor?.role) ? (
                   item.element
                 ) : (
-                  (tokenInfor?.role) == "USER" ? (<Navigate to="/" />) : (<Navigate to="/login" />)
+                  tokenInfor?.role === "USER" ? <Navigate to="/" /> : <Navigate to="/login" />
                 )
               }
             />
