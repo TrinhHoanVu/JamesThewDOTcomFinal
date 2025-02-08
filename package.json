@@ -1,0 +1,61 @@
+{
+  "name": "cookeryclass",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.9",
+    "country-state-city": "^3.2.1",
+    "datatables.net": "^2.2.1",
+    "datatables.net-buttons": "^3.2.1",
+    "datatables.net-dt": "^2.2.1",
+    "datatables.net-responsive": "^3.0.3",
+    "date-fns": "^4.1.0",
+    "draft-js": "^0.11.7",
+    "eslint-plugin-react-hooks": "^5.2.0-canary-5b51a2b9-20250116",
+    "jquery": "^3.7.1",
+    "jwt-decode": "^4.0.0",
+    "lucide-react": "^0.474.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "react-icon": "^1.0.0",
+    "react-icons": "^5.4.0",
+    "react-router-dom": "^7.1.5",
+    "react-scripts": "5.0.1",
+    "sweetalert2": "^11.15.10",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "ajv": "^7.2.4"
+  }
+}

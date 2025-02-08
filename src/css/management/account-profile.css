@@ -1,0 +1,159 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  background-image: url("https://source.unsplash.com/1600x900/?kitchen,cooking");
+  background-size: cover;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-box {
+  background: none;
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 1000px;
+  min-width: 1000px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #e67e22;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #34495e;
+}
+
+input,
+.custom-row .form-select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: #fff;
+  appearance: none;
+  text-align: left;
+  box-shadow: none;
+}
+
+input:focus,
+.custom-row .form-select:focus {
+  border-color: #e67e22;
+  outline: none;
+  box-shadow: 0 0 5px rgba(230, 126, 34, 0.5);
+}
+
+input:hover,
+.custom-row .form-select:hover {
+  border-color: #888;
+}
+
+
+.custom-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.custom-row .form-select,
+.custom-row input {
+  flex: none;
+  width: 50%;
+  width: 250px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.profile-button {
+  background-color: #ff7700;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.profile-button:hover {
+  background-color: #d35400;
+}
+
+
+.custom-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.custom-row .form-select {
+  flex: none;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #fff;
+  box-sizing: border-box;
+  text-align: left;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 4 5"%3E%3Cpath fill%3D"%23ccc" d%3D"M2 0L0 2h4zm0 5L0 3h4z"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}
+
+
+.custom-row .form-select:hover {
+  border-color: #888;
+}
+
+.custom-row .form-select:focus {
+  border-color: #e67e22;
+  outline: none;
+  box-shadow: 0 0 5px rgba(230, 126, 34, 0.5);
+}
+
+.updateAddress {
+  background-color: #e67e22;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* .container{
+  margin-top: 15px;
+} */

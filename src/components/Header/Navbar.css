@@ -1,0 +1,434 @@
+
+.navbar {
+    box-shadow: rgba(250, 246, 246, 0.16) 0px 1px 4px;
+    height: 50px;
+    position: relative;
+    z-index: 999;
+    /* transition: all 0.3s ease-in-out; */
+    background: linear-gradient(135deg, hwb(21 19% 6%), #ec4c28); /* Gradient background */
+}
+  
+  .navbar-brand-text {
+    margin-left: 5px;
+    color: #000000;
+  }
+  
+  .scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .login-btn {
+    background: transparent;
+    border: 2px solid  #ff6f61;
+    color: #000000;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;    
+  }
+  
+  .login-btn:hover {
+    background: #ff8400;
+    color: #0e0e0e;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    padding: 25px 35px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 15px 30px #ff7f50;
+    animation: slideIn 0.4s ease-out;
+  }
+  .winner-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .winner-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #ff7f50;
+    object-fit: cover;
+  }
+  
+  .winner-info p {
+    font-size: 18px;
+    color: #060606;
+    font-weight: 500;
+    margin: 0;
+  }
+:root {
+  --clr-black: #000;
+  --clr-white: #fff;
+  --font-raleway: 'Raleway', sans-serif;
+  --clr-orange: #E16120;
+  --clr-dark-orange: #C5541A;
+  --clr-green: #3A9691;
+  --clr-gray: #707070;
+  --clr-dark-gray: #434343;
+  --clr-dark: #232323;
+  --clr-whitesmoke: #f5f5f5;
+  --transition: all 300ms ease-in-out;
+}
+
+/* global styles & resets */
+ *,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  scroll-behavior: smooth;
+}
+
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+} 
+
+
+
+input,
+textarea,
+select {
+  outline: 0;
+  /* border: none; */
+  resize: none;
+  /* font-family: inherit; */
+  /* font-size: 1.9rem; */
+}
+
+/* custom utility classes */
+/* .container {
+  max-width: 1300px;
+  margin: 0  auto;
+  padding: 0 2rem;
+  
+} */
+
+/* flexbox and grid */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* .justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+} */
+
+.grid {
+  display: grid;
+}
+
+/* height and width */
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+.text-orange {
+  color: var(--clr-orange);
+}
+
+.bg-black {
+  background-color: var(--clr-black);
+}
+
+.bg-white {
+  background-color: var(--clr-white);
+}
+
+.bg-orange {
+  background-color: var(--clr-orange);
+}
+
+
+/*  */
+
+.fw-1 {
+  font-weight: 100;
+}
+
+.fw-2 {
+  font-weight: 200;
+}
+
+.fw-3 {
+  font-weight: 300;
+}
+
+.fw-4 {
+  font-weight: 400;
+}
+
+.fw-5 {
+  font-weight: 500;
+}
+
+.fw-6 {
+  font-weight: 600;
+}
+
+.fw-7 {
+  font-weight: 700;
+}
+
+.fw-8 {
+  font-weight: 800;
+}
+
+.fw-9 {
+  font-weight: 900;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-17 {
+  font-size: 17px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-19 {
+  font-size: 19px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-21 {
+  font-size: 21px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-23 {
+  font-size: 23px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-25 {
+  font-size: 25px;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+.ls-1 {
+  letter-spacing: 1px;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+} 
+ .mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.py-1 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+} 
+ .py-2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.py-3 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.py-4 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.py-5 {
+  padding-top: 48px;
+  padding-bottom: 48px;
+} 
+ .py-6 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.py-7 {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.px-1 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.px-2 {
+  padding-left: 8px;
+  padding-right: 8px;
+}  .px-3 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.px-4 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.px-5 {
+  padding-left: 48px;
+  padding-right: 48px;
+} 
+ .px-6 {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.px-7 {
+  padding-left: 72px;
+  padding-right: 72px;
+} .my-1 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.my-2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+} 
+ .my-3 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.my-4 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+} 
+ .my-5 {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.my-6 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.mx-1 {
+  margin-left: 4px;
+  margin-right: 4px;
+} 
+ .mx-2 {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.mx-3 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.mx-4 {
+  margin-left: 24px;
+  margin-right: 24px;
+} 
+ .mx-5 {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.mx-6 {
+  margin-left: 60px;
+  margin-right: 60px;
+} 
+
+/* section */
+.main-holder {
+  overflow-x: hidden;
+}
+
+.section-wrapper {
+  padding: 5px 0;
+}
+

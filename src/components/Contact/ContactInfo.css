@@ -1,0 +1,175 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Global styles */
+* {
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Poppins', serif; */
+}
+
+body {
+    background-color: #fcde67; /* Background color */
+}
+
+/* Main container for centering content */
+.main {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Heading styles */
+.heading h1 {
+    color: #030e12;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-top: 2rem;
+    margin: 1rem;
+}
+
+/* Contact section styling */
+.contact-info {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, hwb(27 20% 0%), #ffb400); /* Gradient background */
+    padding: 20px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.contact-info .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-info .contact-title {
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contact-info .contact-text {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* Contact content section */
+.contact-info .contact-content {
+    background-color: #fff;
+    color: #333;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Contact details styles */
+.contact-info .contact-content .contact-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info .contact-content .contact-details .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+}
+
+.contact-info .contact-content .contact-details .contact-item .contact-icon {
+    font-size: 1rem;
+    color: #ff6f61; /* Orange color for icons */
+}
+.contact-icon-map {
+    font-size: 1.8rem;
+    color: #ff6f61; /* Orange color for icons */
+}
+.contact-info .contact-content .contact-details .contact-item p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Social media section */
+.contact-info .contact-content .social-media {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-info .contact-content .social-media h3 {
+    font-size: 1.6rem;
+    color: #ff6f61; /* Orange heading */
+}
+
+.contact-info .contact-content .social-media .social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-info .contact-content .social-media .social-icons .social-icon {
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.contact-info .contact-content .social-media .social-icons .social-icon:hover {
+    color: #ff6f61; /* Hover effect */
+}
+
+.contact-info .contact-content .social-media .social-icons .social-icon.fb {
+    color: #3b5998; /* Facebook color */
+}
+
+.contact-info .contact-content .social-media .social-icons .social-icon.ig {
+    color: #e4405f; /* Instagram color */
+}
+
+.contact-info .contact-content .social-media .social-icons .social-icon.tw {
+    color: #1da1f2; /* Twitter color */
+}
+
+/* Support section */
+.contact-info .contact-content .support {
+    flex: 1;
+}
+
+.contact-info .contact-content .support h3 {
+    font-size: 1.5rem;
+    color: #ff6f61; /* Orange text */
+    margin-bottom: 10px;
+}
+
+.contact-info .contact-content .support p {
+    font-size: 1.3rem;
+    text-align: justify;
+    color: #000000;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .contact-info .contact-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-info .contact-content .contact-details,
+    .contact-info .contact-content .social-media,
+    .contact-info .contact-content .support {
+        flex: none;
+        width: 100%;
+    }
+}

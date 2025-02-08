@@ -1,0 +1,35 @@
+.ingredient-card-container {
+    min-width: 50px;
+    max-width: 150px;
+    width: fit-content;
+    height: 30px;
+    align-items: center;
+    background-color: #e67e22;
+    justify-content: center;
+    display: flex;
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    border-radius: 15px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    gap: 5px;
+}
+
+.ingredient-card-container:hover {
+    transform: scale(1.05);
+}
+
+.ingredient-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-start;
+    min-height: 1px;
+    max-height: 100px;
+    overflow: hidden;
+    overflow-y: auto;
+}

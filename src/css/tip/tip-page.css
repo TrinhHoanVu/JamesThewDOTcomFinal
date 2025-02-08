@@ -1,0 +1,16 @@
+.tip-title {
+    position: absolute;
+    font-size: 4rem;
+    top: 30%;
+    left: 35%;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.contest-status-public {
+    background-color: #4caf50;
+    color: white;
+}
